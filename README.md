@@ -1,80 +1,65 @@
-<p align="center">
-<img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
-</p>
+## T**echnical requirements**
 
-<h2 align="center">
-<a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 3
-</h2><br>
+### Inspiration
 
-<pre align="center">
-🧪 Working in Progress
-</pre>
+I was looking for an idea for a pet-project and I came across this site, where the most recent GURU-level of complexity was this project. I just add functionality and adopted it.
 
-<p align="center">
-<br>
-<a href="https://vitesse-nuxt3.netlify.app/">🖥 Online Preview</a>
-<br><br>
-<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
-</p>
+[https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB](https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB)
 
-## Features
+### Layout
 
-- [💚 Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+__Main page / Add new task / View task__
+  <div style="display:flex;width:100%;">
+    <img style="width:32%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213936168-1dc9316b-3e36-4677-bbec-fadd09e67fbe.png" />
+    <img style="width:33%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213936116-e11e61a3-00d8-437e-9c0e-d168acadb6ef.png" />
+    <img style="width:33%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213935934-d64cdc88-f828-471c-87db-aa67e6ce9130.png" />
+  </div>
 
-- ⚡️ Vite - Instant HMR
+### Description
 
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+This project similar to canban-desk clone (to some extent) with auth, shared boards etc…
 
-- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
+### Main features:
 
-- 🔥 The `<script setup>` syntax
+1. Opportunity to create the boards, desks within the boards;
+2. Opportunity to add/alter/remove/view task and attach to the desks;
+3. Opportunity add subtasks to each task;
+4. Drag’n’Drop for shifting tasks within the board (between the desks);
+5. JWT-based auth (different users - different boards);
+6. Unit tests for business logic;
+7. Component tests;
+8. Stories for UI components;
+9. Feature-sliced architecture;
+10. SSR;
+11. Complicated animations.
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts)
+### Optimistic features:
 
-- 📑 [Layout system](./layouts)
+1. The interacting with welcome guide (during first visit after registration);
+2. OAuth v2 (gmail);
+3. Public one-time link to particular desk (even for non-registered users);
+4. Several user roles (with different permission - full access to own boards / any boards, read-only, …;
+5. Shared boards between several users (friends mechanics);
+6. Realtime interaction with shared boards (websockets);
 
-- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
+### Core tech stack (current)
 
-- 🏎 Zero-config cloud functions and deploy
+**Frontend:**
 
-- 🦾 TypeScript, of course
+1. Nuxt 3 (SSR, Fullstack meta framework, based on Vue 3);
+2. UnoCSS (atomic CSS-engine);
+3. [**Vue-Query**](https://tanstack.com/query/v4/docs/vue/overview)
+4. Vite (build tool);
+5. Vuelidate (form validation);
+6. VueUse (utility functions);
+7. Headless UI (some UI components);
+8. [**Framer Motion** (animations)](https://motion.vueuse.org/);
+9. Vitest (unit tests);
+10. Testing-library (component tests);
+11. Storybook (stories for components);
 
-## Plugins
+**Backend-only:**
 
-### Nuxt Modules
-
-- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
-- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
-- [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
-- [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
-
-## IDE
-
-We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
-
-## Variations
-
-- [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-## Try it now!
-
-### Online
-
-<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-nuxt3/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit antfu/vitesse-nuxt3 my-nuxt3-app
-cd my-nuxt3-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
+1. [Planetscale (serverless SQL platform)](https://planetscale.com/)
+2. Prisma (ORM for database)
+3. JWT & bcrypt (for auth)
