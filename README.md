@@ -29,7 +29,7 @@ This project similar to canban-desk clone (to some extent) with auth, shared boa
 6. Unit tests for business logic;
 7. Component tests;
 8. Stories for UI components;
-9. Feature-sliced architecture;
+9. [**Feature-sliced architecture**](https://feature-sliced.design/docs);
 10. SSR;
 11. Complicated animations.
 
