@@ -22,16 +22,17 @@ This project similar to canban-desk clone (to some extent) with auth, shared boa
 ### Main features:
 
 1. Opportunity to create the boards, desks within the boards;
-2. Opportunity to add/alter/remove/view task and attach to the desks;
+2. Opportunity to add/alter/remove/view tasks and attach them to the desks;
 3. Opportunity add subtasks to each task;
 4. Drag’n’Drop for shifting tasks within the board (between the desks);
 5. JWT-based auth (different users - different boards);
-6. Unit tests for business logic;
-7. Component tests;
-8. Stories for UI components;
-9. [**Feature-sliced architecture**](https://feature-sliced.design/docs);
-10. SSR;
-11. Complicated animations.
+6. [SSR](https://nuxt.com/);
+7. [Asynchronous state management](https://tanstack.com/query/latest)
+8. [**Feature-sliced architecture**](https://feature-sliced.design/docs);
+9. Unit tests for business logic;
+10. Component tests;
+11. Stories for UI components;
+12. Complicated animations.
 
 ### Optimistic features:
 
