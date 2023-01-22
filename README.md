@@ -58,7 +58,8 @@ This project similar to canban-desk clone (to some extent) with auth, shared boa
 9. Vitest (unit tests);
 10. Testing-library (component tests);
 11. Storybook (stories for components);
-12. ESLint, Prettier, Stylelint, Husky.
+12. ESLint, Prettier, Stylelint, Husky;
+13. CI/CD (github actions).
 
 **Backend-only:**
 
