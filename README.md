@@ -41,7 +41,7 @@ This project similar to canban-desk clone (to some extent) with auth, shared boa
 3. Public one-time link to particular desk (even for non-registered users);
 4. Several user roles (with different permission - full access to own boards / any boards, read-only, …;
 5. Shared boards between several users (friends mechanics);
-6. Realtime interaction with shared boards (websockets);
+6. Realtime interaction with shared boards (websockets).
 
 ### Core tech stack (current)
 
@@ -54,13 +54,14 @@ This project similar to canban-desk clone (to some extent) with auth, shared boa
 5. Vuelidate (form validation);
 6. VueUse (utility functions);
 7. Headless UI (some UI components);
-8. [**Framer Motion** (animations)](https://motion.vueuse.org/);
+8. [**Motion one** (animations)](https://motion.dev/vue/quick-start);
 9. Vitest (unit tests);
 10. Testing-library (component tests);
 11. Storybook (stories for components);
+12. ESLint, Prettier, Stylelint, Husky.
 
 **Backend-only:**
 
-1. [Planetscale (serverless SQL platform)](https://planetscale.com/)
-2. Prisma (ORM for database)
-3. JWT & bcrypt (for auth)
+1. [Planetscale (serverless SQL platform)](https://planetscale.com/);
+2. Prisma (ORM for database);
+3. JWT & bcrypt (for auth).
