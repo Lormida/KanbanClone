@@ -33,4 +33,20 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  theme: {
+    colors: {
+      neutral: 'rgba(var(--neutral))',
+      mainAccent: 'rgba(var(--mainAccent))',
+      main: 'rgba(var(--main))',
+      mainWeakAnti: 'rgba(var(--mainWeakAnti))',
+      antiMain: 'rgba(var(--antiMain))',
+      antiMainAccent: 'rgba(var(--antiMainAccent))',
+      btnMain: 'rgba(var(--btnMain))',
+      btnMainLight: 'rgba(var(--btnMainLight))',
+      badgeMain: 'rgba(var(--badgeMain))',
+      badgeMainLight: 'rgba(var(--badgeMainLight))',
+      btnSec: 'rgba(var(--btnSec))',
+      btnSecLight: 'rgba(var(--btnSecLight))',
+    },
+  },
 })
