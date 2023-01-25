@@ -12,7 +12,7 @@ __Main page / Add new task / View task__
   <div style="display:flex;width:100%;">
     <img style="width:32%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213936168-1dc9316b-3e36-4677-bbec-fadd09e67fbe.png" />
     <img style="width:33%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213936116-e11e61a3-00d8-437e-9c0e-d168acadb6ef.png" />
-    <img style="width:33%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213935934-d64cdc88-f828-471c-87db-aa67e6ce9130.png" />
+    <img style="width:33%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/214620794-2b9c2e9f-dd3e-4034-a89d-23459d3c8445.png" />
   </div>
 
 ### Description
