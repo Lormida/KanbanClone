@@ -8,7 +8,8 @@ I was looking for an idea for a pet-project and I came across this site, where t
 
 ### Layout
 
-__Main page / Add new task / View task__
+**Main page / Add new task / View task**
+
   <div style="display:flex;width:100%;">
     <img style="width:32%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213936168-1dc9316b-3e36-4677-bbec-fadd09e67fbe.png" />
     <img style="width:33%; object-fit:contain" src="https://user-images.githubusercontent.com/73850614/213936116-e11e61a3-00d8-437e-9c0e-d168acadb6ef.png" />
