@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
-    '@sidebase/nuxt-auth',
+    // '@sidebase/nuxt-auth',
     'nuxt-headlessui',
     '@vue-macros/nuxt',
   ],
@@ -15,8 +15,9 @@ export default defineNuxtConfig({
     reactivityTransform: true,
     inlineSSRStyles: false,
   },
+  // TODO: public vs assets
   css: [
-    '@unocss/reset/tailwind.css', '@/assets/styles/palette.scss', '@/assets/styles/main.scss',
+    '@unocss/reset/tailwind.css', '@/app/public/styles/abstract/palette.scss', '@/app/public/styles/base/main.scss',
   ],
   colorMode: {
     classSuffix: '',
@@ -28,5 +29,10 @@ export default defineNuxtConfig({
       },
       Lato: [100, 300],
     },
+  },
+  srcDir: 'src',
+  dir: {
+    layouts: 'shared/ui/layouts',
+    public: 'shared/app/public',
   },
 })
