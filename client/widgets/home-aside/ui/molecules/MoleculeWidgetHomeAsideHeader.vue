@@ -15,6 +15,6 @@ import AtomVBigTitle from '~~/client/shared/ui/components/atoms/title/AtomVBigTi
 
 <style lang="scss" scoped>
 .home-aside-header {
-	@apply flex items-center justify-center gap-x-4 w-full;
+	@apply flex items-center justify-center gap-x-[5%] w-full py-10;
 }
 </style>
