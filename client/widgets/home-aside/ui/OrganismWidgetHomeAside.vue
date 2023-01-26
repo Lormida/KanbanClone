@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import MoleculeWidgetHomeAsideHeader from './molecules/MoleculeWidgetHomeAsideHeader.vue';
-import MoleculeWidgetHomeAsideBoards from './molecules/MoleculeWidgetHomeAsideBoards.vue';
+import MoleculeHomeAsideHeader from './aside-header/MoleculeHomeAsideHeader.vue';
+import MoleculeHomeAsideBoards from './aside-boards/MoleculeHomeAsideBoards.vue';
 </script>
 
 <template>
 	<div class="home-aside">
-		<MoleculeWidgetHomeAsideHeader> kanban </MoleculeWidgetHomeAsideHeader>
-		<MoleculeWidgetHomeAsideBoards />
+		<MoleculeHomeAsideHeader> kanban </MoleculeHomeAsideHeader>
+		<MoleculeHomeAsideBoards />
 	</div>
 </template>
 

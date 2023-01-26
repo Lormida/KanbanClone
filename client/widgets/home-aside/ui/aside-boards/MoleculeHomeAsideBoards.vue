@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { AtomVSubtitle } from '~~/client/shared/ui/components';
-import AtomWidgetHomeAsideBoard from '../atoms/AtomWidgetHomeAsideBoard.vue';
+import AtomHomeAsideBoard from './AtomHomeAsideBoard.vue';
 
 const boards = ['Platform Launch', 'Marketing Plan', 'Roadmap'];
 </script>
@@ -11,9 +11,9 @@ const boards = ['Platform Launch', 'Marketing Plan', 'Roadmap'];
 			all boards (8)</AtomVSubtitle
 		>
 		<div class="flex w-9/10 flex-col gap-y-5">
-			<AtomWidgetHomeAsideBoard v-for="board in boards" :key="board">
+			<AtomHomeAsideBoard v-for="board in boards" :key="board">
 				{{ board }}
-			</AtomWidgetHomeAsideBoard>
+			</AtomHomeAsideBoard>
 		</div>
 	</div>
 </template>
