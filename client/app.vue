@@ -21,14 +21,8 @@ useHead({
 html,
 body,
 #__nuxt {
-	min-height: 100vh;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-html.dark {
-	background: #222;
-	color: white;
 }
 </style>

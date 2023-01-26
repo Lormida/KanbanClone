@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { VHello } from '~/shared/ui/components';
+definePageMeta({
+	layout: 'home',
+});
 </script>
 
 <template>
-	<div class="bg-emerald-300/90">
-		<h1 class="text-red">Hello world, i'm nuxt 3</h1>
-		<VHello></VHello>
-	</div>
+	<div class="home-content"></div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.home-content {
+	@apply h-full bg-zinc-400;
+}
+</style>

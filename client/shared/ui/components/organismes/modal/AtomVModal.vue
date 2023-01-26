@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
-<template>Login</template>
+<template></template>
 
 <style lang="scss" scoped></style>
