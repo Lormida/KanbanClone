@@ -21,7 +21,7 @@ watch(enabled, (newEnabled) => {
 	<Switch
 		v-model="enabled"
 		:class="enabled ? 'bg-white' : 'bg-black'"
-		class="relative scale-120 inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+		class="relative text-4xl:scale-120 inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
 	>
 		<span
 			aria-hidden="true"

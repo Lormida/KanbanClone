@@ -1,1 +1,1 @@
-export { default as OrganismWidgetHomeHeader } from './ui/OrganismWidgetHomeHeader.vue';
+export { default as MoleculeWidgetHomeHeader } from './ui/MoleculeWidgetHomeHeader.vue';

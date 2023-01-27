@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import { OrganismWidgetHomeAside } from '~/widgets/home-aside';
-import { OrganismWidgetHomeHeader } from '~/widgets/home-header';
+import { MoleculeWidgetHomeHeader } from '~/widgets/home-header';
 </script>
 
 <template>
 	<main class="home">
 		<OrganismWidgetHomeAside class="home__aside" />
 		<div class="home__content">
-			<OrganismWidgetHomeHeader class="home__header" />
+			<MoleculeWidgetHomeHeader class="home__header" />
 			<slot />
 		</div>
 	</main>
@@ -31,7 +31,7 @@ import { OrganismWidgetHomeHeader } from '~/widgets/home-header';
 	// .home__header
 
 	&__header {
-		@apply max-h-20;
+		@apply border-l-neutral border-l-2;
 	}
 }
 </style>

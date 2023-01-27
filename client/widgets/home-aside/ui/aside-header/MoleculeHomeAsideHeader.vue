@@ -7,7 +7,7 @@ import { AtomVBigtitle } from '~~/client/shared/ui/components';
 	<div class="home-aside-header">
 		<AtomHomeAsideHeaderIcon />
 
-		<AtomVBigtitle>
+		<AtomVBigtitle class="font-extrabold">
 			<slot />
 		</AtomVBigtitle>
 	</div>
@@ -15,6 +15,6 @@ import { AtomVBigtitle } from '~~/client/shared/ui/components';
 
 <style lang="scss" scoped>
 .home-aside-header {
-	@apply flex items-center justify-center gap-x-[5%] w-full py-10;
+	@apply flex items-center justify-center gap-x-[5%] w-full py-0;
 }
 </style>

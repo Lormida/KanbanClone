@@ -17,6 +17,6 @@ import MoleculeHomeAsideBadgeControls from './aside-badge-controls/MoleculeHomeA
 
 <style lang="scss" scoped>
 .home-aside {
-	@apply flex flex-col items-start w-full gap-y-15 h-full pt-10 pb-10 bg-aside;
+	@apply flex flex-col items-start w-full gap-y-15 h-full py-10 bg-aside;
 }
 </style>
