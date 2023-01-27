@@ -51,6 +51,7 @@ export default defineConfig({
 			badgeMainLight: 'var(--badgeMainLight)',
 			btnSec: 'var(--btnSec)',
 			btnSecLight: 'var(--btnSecLight)',
+			aside: 'var(--aside)',
 		},
 	},
 });

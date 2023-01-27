@@ -25,6 +25,7 @@ html.light {
 	--mainAccent: var(--white);
 	--main: var(--light-300);
 	--mainWeakAnti: var(--light-500);
+	--aside: var(--white);
 
 	--antiMain: var(--dark-900);
 	--antiMainAccent: var(--black);
@@ -35,6 +36,7 @@ html.dark {
 	--mainAccent: var(--black);
 	--main: var(--dark-900);
 	--mainWeakAnti: var(--dark-700);
+	--aside: var(--zinc-800);
 
 	--antiMain: var(--light-50);
 	--antiMainAccent: var(--white);
