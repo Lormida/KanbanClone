@@ -19,13 +19,12 @@ import { MoleculeWidgetHomeHeader } from '~/widgets/home-header';
 	// .home__aside
 
 	&__aside {
-		@apply max-w-1/5;
 	}
 
 	// .home__content
 
 	&__content {
-		@apply flex flex-col h-full w-4/5;
+		@apply flex flex-col h-full w-full;
 	}
 
 	// .home__header
