@@ -56,46 +56,71 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 			kanban
 		</MoleculeHomeAsideHeader>
 
-		<Transition name="fade">
+		<Transition name="magic" mode="out-in">
 			<MoleculeHomeAsideBoards v-if="!isHiddenAside" />
 		</Transition>
 
-		<ClientOnly>
-			<MoleculeHomeAsideBadgeControls
-				:is-hidden-aside="isHiddenAside"
-				class="self-center mt-a"
-			/>
-		</ClientOnly>
+		<div class="flex flex-col items-center gap-y-6 w-full">
+			<ClientOnly>
+				<MoleculeHomeAsideBadgeControls
+					:is-hidden-aside="isHiddenAside"
+					class="self-center"
+				/>
+			</ClientOnly>
 
-		<button
-			class="center gap-x-3 w-4/5 mx-a bg-dark-900 px-3 py-4 rounded"
-			@click="toggleAsideIsHidden()"
-		>
-			<span
-				class="i-heroicons-eye-slash-20-solid text-3xl light:text-dark dark:text-white"
-			></span>
-			<h2
-				v-if="!isHiddenAside"
-				class="text-xl font-bold dark:text-slate-300 light:text-slate-900"
-			>
-				Hide sidebar
-			</h2>
-		</button>
+			<Transition name="fade" mode="out-in">
+				<button
+					v-if="isHiddenAside"
+					class="center gap-x-3 w-4/5 mx-a mt-a bg-dark-900 px-3 h-20 py-4 rounded"
+					@click="toggleAsideIsHidden()"
+				>
+					<span
+						class="i-heroicons-eye-20-solid text-3xl light:text-dark dark:text-white"
+					/>
+				</button>
+
+				<button
+					v-else
+					class="center gap-x-3 w-4/5 mx-a mt-a bg-dark-900 px-3 h-20 py-4 rounded"
+					@click="toggleAsideIsHidden()"
+				>
+					<span
+						class="i-heroicons-eye-slash-20-solid text-3xl light:text-dark dark:text-white"
+					/>
+
+					<h2
+						class="text-xl font-bold dark:text-slate-300 light:text-slate-900"
+					>
+						Hide sidebar
+					</h2>
+				</button>
+			</Transition>
+		</div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
 .home-aside {
-	@apply flex flex-col transition-300 items-start gap-y-15 h-full py-10  bg-aside;
+	@apply flex flex-col transition-300 justify-between items-start gap-y-15 h-full py-10  bg-aside;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-	transition: all 0.3s ease;
+	transition: opacity 0.3s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
+	opacity: 0;
+}
+
+.magic-enter-active,
+.magic-leave-active {
+	transition: all 0.3s ease;
+}
+
+.magic-enter-from,
+.magic-leave-to {
 	opacity: 0;
 	transform: scale(0);
 }
