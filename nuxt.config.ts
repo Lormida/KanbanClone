@@ -15,11 +15,17 @@ export default defineNuxtConfig({
 		reactivityTransform: true,
 		inlineSSRStyles: false,
 	},
+	srcDir: 'client',
+	dir: {
+		layouts: 'shared/ui/layouts',
+		public: 'app/public',
+		assets: 'app/assets',
+	},
 	// TODO: public vs assets
 	css: [
 		'@unocss/reset/tailwind.css',
-		'@/app/public/styles/abstract/palette.scss',
-		'@/app/public/styles/base/main.scss',
+		'app/public/styles/abstract/palette.scss',
+		'app/public/styles/base/main.scss',
 	],
 	colorMode: {
 		classSuffix: '',
@@ -31,10 +37,5 @@ export default defineNuxtConfig({
 			},
 			Lato: [100, 300],
 		},
-	},
-	srcDir: 'client',
-	dir: {
-		layouts: 'shared/ui/layouts',
-		public: 'shared/app/public',
 	},
 });

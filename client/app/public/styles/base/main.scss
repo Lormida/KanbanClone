@@ -23,21 +23,21 @@ html {
 
 html.light {
 	--mainAccent: var(--white);
-	--main: var(--light-300);
-	--mainWeakAnti: var(--light-500);
+	--main: var(--light-500);
+	--mainWeakAnti: var(--light-50);
 	--aside: var(--white);
 
-	--antiMain: var(--dark-900);
+	--antiMain: var(--dark-500);
 	--antiMainAccent: var(--black);
 }
 
 // Override variables for dark theme
 html.dark {
 	--mainAccent: var(--black);
-	--main: var(--dark-900);
-	--mainWeakAnti: var(--dark-700);
+	--main: var(--dark-500);
+	--mainWeakAnti: var(--dark-50);
 	--aside: var(--zinc-800);
 
-	--antiMain: var(--light-50);
+	--antiMain: var(--light-500);
 	--antiMainAccent: var(--white);
 }

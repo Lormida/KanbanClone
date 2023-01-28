@@ -5,8 +5,8 @@ const props = defineProps<{
 
 const mapProperty = {
 	primary: `
-	dark:(text-emerald-200 bg-emerald-900 border-2 border-emerald-200)
-	light:(text-emerald-200 bg-emerald-900 border-2 border-emerald-900)
+	dark:(text-emerald-200 bg-emerald-900)
+	light:(text-emerald-200 bg-emerald-900)
 	`,
 };
 
