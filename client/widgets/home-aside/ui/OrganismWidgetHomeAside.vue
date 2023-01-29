@@ -57,7 +57,7 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 		</MoleculeHomeAsideHeader>
 
 		<Transition name="magic" mode="out-in">
-			<MoleculeHomeAsideBoards v-if="!isHiddenAside" />
+			<MoleculeHomeAsideBoards class="mb-a" v-if="!isHiddenAside" />
 		</Transition>
 
 		<div class="flex flex-col items-center gap-y-6 w-full">
@@ -71,7 +71,7 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 			<Transition name="fade" mode="out-in">
 				<button
 					v-if="isHiddenAside"
-					class="center gap-x-3 w-4/5 mx-a mt-a bg-dark-900 px-3 h-20 py-4 rounded"
+					class="center gap-x-3 w-4/5 mx-a mt-a border-2 light:(bg-light-900 border-dark/50) dark:(bg-dark-900 border-light-900/50) px-3 h-20 py-4 rounded"
 					@click="toggleAsideIsHidden()"
 				>
 					<span
@@ -81,7 +81,7 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 
 				<button
 					v-else
-					class="center gap-x-3 w-4/5 mx-a mt-a bg-dark-900 px-3 h-20 py-4 rounded"
+					class="center gap-x-3 w-4/5 mx-a mt-a border-2 light:(bg-light-900 border-dark/50) dark:(bg-dark-900 border-light-900/50) px-3 h-20 py-4 rounded"
 					@click="toggleAsideIsHidden()"
 				>
 					<span
