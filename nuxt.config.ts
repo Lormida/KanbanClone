@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+	// ssr: false,
 	// TODO: add unlighthouse
 	// TODO: check vue-macros docs
 	modules: [
@@ -8,8 +9,8 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'@nuxtjs/google-fonts',
 		// '@sidebase/nuxt-auth',
+		// '@vue-macros/nuxt',
 		'nuxt-headlessui',
-		'@vue-macros/nuxt',
 	],
 	experimental: {
 		reactivityTransform: true,

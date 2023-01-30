@@ -6,7 +6,9 @@ import { MoleculeWidgetHomeHeader } from '~/widgets/home-header';
 <template>
 	<main class="home">
 		<OrganismWidgetHomeAside class="home__aside" />
-		<div class="home__content">
+		<div
+			class="home__content-wrapper h-full flex max-h-screen overflow-y-scroll flex-col h-full w-full"
+		>
 			<MoleculeWidgetHomeHeader class="home__header" />
 			<slot />
 		</div>
@@ -15,7 +17,8 @@ import { MoleculeWidgetHomeHeader } from '~/widgets/home-header';
 
 <style lang="scss" scoped>
 .home {
-	@apply flex min-h-screen h-full;
+	display: flex;
+	height: 100%;
 	// .home__aside
 
 	&__aside {
@@ -23,8 +26,8 @@ import { MoleculeWidgetHomeHeader } from '~/widgets/home-header';
 
 	// .home__content
 
-	&__content {
-		@apply flex flex-col h-full w-full;
+	&__content-wrapper {
+		// @apply flex flex-col h-full w-full;
 	}
 
 	// .home__header

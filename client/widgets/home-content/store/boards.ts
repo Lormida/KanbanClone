@@ -73,6 +73,30 @@ const useBoardsStore = defineStore('boards', {
 								subtitle: 'Research pricing',
 								text: '1 of 3 substasks',
 							},
+							{
+								subtitle: 'Design settings and search pages',
+								text: '1 of 3 substasks',
+							},
+							{
+								subtitle: 'Add account management endpoints',
+								text: '2 of 3 substasks',
+							},
+							{
+								subtitle: 'Design onboarding flow',
+								text: '1 of 3 substasks',
+							},
+							{
+								subtitle: 'Add search endpoints',
+								text: '1 of 2 substasks',
+							},
+							{
+								subtitle: 'Add authentication endpoints',
+								text: '1 of 2 substasks',
+							},
+							{
+								subtitle: 'Research pricing',
+								text: '1 of 3 substasks',
+							},
 						],
 					},
 					{

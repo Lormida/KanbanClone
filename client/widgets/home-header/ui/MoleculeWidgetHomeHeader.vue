@@ -4,7 +4,7 @@ import AtomHomeHeaderTitle from './AtomHomeHeaderTitle.vue';
 </script>
 
 <template>
-	<div class="home-header">
+	<div class="home-header px-20 w-full py-8">
 		<AtomHomeHeaderTitle />
 		<AtomHomeHeaderAddBtn />
 	</div>
@@ -12,7 +12,10 @@ import AtomHomeHeaderTitle from './AtomHomeHeaderTitle.vue';
 
 <style lang="scss" scoped>
 .home-header {
-	@apply flex items-center justify-between px-20 w-full py-8;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 	@apply bg-gradient-to-r light:from-white dark:from-zinc-800 light:to-zinc-100 dark:to-zinc-400;
 }
 </style>

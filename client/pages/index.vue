@@ -14,6 +14,6 @@ definePageMeta({
 
 <style lang="scss" scoped>
 .home-content {
-	@apply h-full bg-zinc-400;
+	@apply bg-zinc-400;
 }
 </style>

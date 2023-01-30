@@ -16,7 +16,7 @@ const currentBoard = storeBoards.getBoardByName(currentBoardName);
 			v-bind="desk"
 			class="max-w-1/6"
 		/>
-		<MoleculeAddColumnDesk class="max-w-1/6"></MoleculeAddColumnDesk>
+		<!-- <MoleculeAddColumnDesk class="max-w-1/6"></MoleculeAddColumnDesk> -->
 	</div>
 </template>
 

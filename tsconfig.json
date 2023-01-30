@@ -6,11 +6,11 @@
 		"module": "ESNext",
 		"moduleResolution": "Node",
 		"skipLibCheck": true,
-		"strict": false,
+		"strict": true,
 		"allowJs": true,
 		"noEmit": true,
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true
-	},
-	"include": ["**/*.vue"]
+	}
+	// "include": ["./**/*.vue"]
 }

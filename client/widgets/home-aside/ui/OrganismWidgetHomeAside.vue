@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { computed, watch, ref, onMounted, Transition } from 'vue';
+// import { useToggle } from '@vueuse/core';
+
 import MoleculeHomeAsideHeader from './aside-header/MoleculeHomeAsideHeader.vue';
 import MoleculeHomeAsideBoards from './aside-boards/MoleculeHomeAsideBoards.vue';
 import MoleculeHomeAsideBadgeControls from './aside-badge-controls/MoleculeHomeAsideBadgeControls.vue';
@@ -12,9 +15,9 @@ const target = ref<HTMLElement>();
 onMounted(() => {
 	watch(isHiddenAside, (isHiddenAsideVal) => {
 		if (isHiddenAsideVal === true) {
-			animateWidth('hide', target.value);
+			animateWidth('hide', target.value!);
 		} else {
-			animateWidth('reveal', target.value);
+			animateWidth('reveal', target.value!);
 		}
 	});
 });
@@ -29,7 +32,7 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 		end = 200;
 	}
 	let duration = 300;
-	let startTime = null;
+	let startTime = 0;
 	let easing = (t: number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
 
 	function step(timestamp: number) {
@@ -46,7 +49,11 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 </script>
 
 <template>
-	<div ref="target" class="w-full home-aside" :class="[sizeAside]">
+	<div
+		ref="target"
+		class="home-aside h-full w-full flex flex-col transition-300 justify-between items-start gap-y-15 h-full py-10 bg-aside"
+		:class="[sizeAside]"
+	>
 		<MoleculeHomeAsideHeader
 			class="transition-300"
 			:class="{
@@ -57,7 +64,7 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 		</MoleculeHomeAsideHeader>
 
 		<Transition name="magic" mode="out-in">
-			<MoleculeHomeAsideBoards class="mb-a" v-if="!isHiddenAside" />
+			<MoleculeHomeAsideBoards v-if="!isHiddenAside" class="mb-a" />
 		</Transition>
 
 		<div class="flex flex-col items-center gap-y-6 w-full">
@@ -101,7 +108,6 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 
 <style lang="scss" scoped>
 .home-aside {
-	@apply flex flex-col transition-300 justify-between items-start gap-y-15 h-full py-10  bg-aside;
 }
 
 .fade-enter-active,
