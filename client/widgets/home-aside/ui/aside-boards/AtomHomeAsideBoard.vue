@@ -7,7 +7,7 @@
 		<div
 			class="i-ic-outline-space-dashboard text-3xl h-10 bg-10 text-antiMainAccent"
 		/>
-		<p class="text-3xl 4xl:text-4xl text-antiMainAccent">
+		<p class="text-3xl 4xl:text-4xl w-max text-antiMainAccent">
 			<slot />
 		</p>
 	</div>

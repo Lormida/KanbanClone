@@ -120,14 +120,26 @@ function animateWidth(mode: 'reveal' | 'hide', el: HTMLElement) {
 	opacity: 0;
 }
 
-.magic-enter-active,
+.magic-enter-active {
+	animation: 0.3s ease magic;
+}
 .magic-leave-active {
-	transition: all 0.3s ease;
+	animation: 0.3s ease reverse magic;
+	// transition: all 0.6s ease;
 }
 
-.magic-enter-from,
-.magic-leave-to {
-	opacity: 0;
-	transform: scale(0);
+@keyframes magic {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 </style>
