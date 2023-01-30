@@ -25,6 +25,6 @@ const currentBoard = storeBoards.getBoardByName(currentBoardName);
 	background: url('/images/bg-home2.avif');
 	background-position: center;
 	background-size: cover;
-	// filter: grayscale(90%);
+	filter: grayscale(50%);
 }
 </style>

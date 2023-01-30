@@ -1,7 +1,12 @@
 <script setup lang="ts">
-const props = defineProps<{
-	colorSchema: 'primary' | 'alert';
-}>();
+const props = withDefaults(
+	defineProps<{
+		colorSchema: 'primary';
+	}>(),
+	{
+		colorSchema: 'primary',
+	}
+);
 
 const mapProperty = {
 	primary: `
@@ -22,6 +27,6 @@ const typeClasses = computed(() => mapProperty[props.colorSchema]);
 <style lang="scss" scoped>
 .base-btn {
 	@apply px-10 font-medium py-4 text-xl 4xl:text-2xl transition-300 rounded-xl;
-	@apply hover:(scale-x-110);
+	@apply hover:(scale-98 opacity-75);
 }
 </style>
