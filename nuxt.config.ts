@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-	// ssr: false,
+	ssr: false,
 	// TODO: add unlighthouse
 	// TODO: check vue-macros docs
 	modules: [
