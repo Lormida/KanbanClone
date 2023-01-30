@@ -11,6 +11,6 @@
 		"noEmit": true,
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true
-	}
-	// "include": ["./**/*.vue"]
+	},
+	"include": ["./**/*.vue", "./.nuxt/nuxt.d.ts"]
 }

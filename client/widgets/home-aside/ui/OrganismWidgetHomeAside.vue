@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed, watch, ref, onMounted, Transition } from 'vue';
-// import { useToggle } from '@vueuse/core';
-
 import MoleculeHomeAsideHeader from './aside-header/MoleculeHomeAsideHeader.vue';
 import MoleculeHomeAsideBoards from './aside-boards/MoleculeHomeAsideBoards.vue';
 import MoleculeHomeAsideBadgeControls from './aside-badge-controls/MoleculeHomeAsideBadgeControls.vue';

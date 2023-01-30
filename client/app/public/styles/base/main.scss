@@ -2,6 +2,7 @@ html {
 	font-size: 14px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
+	scroll-behavior: smooth;
 }
 
 // Override variables for light theme
@@ -19,7 +20,6 @@ html {
 
 	--reflectShadow: 178, 152, 220;
 }
-
 
 html.light {
 	--mainAccent: var(--white);
