@@ -11,5 +11,6 @@
 		"noEmit": true,
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true
-	}
+	},
+	"include": ["**/*.vue"]
 }

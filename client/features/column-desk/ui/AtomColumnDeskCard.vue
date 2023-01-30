@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { AtomVSubtitle, AtomVText } from '~~/client/shared/ui/components';
 
-const props = defineProps<{
+interface ICard {
 	subtitle: string;
 	text: string;
-}>();
+}
+
+const props = defineProps<ICard>();
 </script>
 
 <template>
